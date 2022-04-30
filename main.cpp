@@ -6,9 +6,13 @@ std::vector<int> numbers = { 0,  };
 // fib(n-1) + fib(n-2);
 void calculate_fibonacci(int n)
 {
-    if (n<2)
+    for (int a=1; a<=n; a++)
     {
-        std::cout << n << std::endl;
+        if (n<2)
+        {      
+            std::cout << n << std::endl;
+        }
+        std::cout << a << std::endl;
     }
 
     int n1 = n - 1;
